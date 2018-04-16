@@ -6,6 +6,15 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+Vue.prototype.sayHello = (name) => console.log(`${name} Hello world!`)
+// Vue.use({
+//   install(Vue){
+//     Vue.prototype.sayHello = function(name){
+//       console.log(`${name} Hello world!`)
+//     }
+//   }
+// })
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
